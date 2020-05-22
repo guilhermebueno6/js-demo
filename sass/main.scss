@@ -1,0 +1,108 @@
+@import '_vars';
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');   
+    main{
+        text-align: center;
+        width: 100vw;
+    }
+    body{
+        font-family: $TekoFont;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        
+        background-color:$playstationBlue;
+    }
+    h1{
+        margin-top: 100px;
+        color: $text-color;
+        font-size: 30px;
+    }
+    h3, h2{
+        margin: 5px 0 5px 0;
+        color:$text-color;
+    }
+    ul{
+        text-align: left;
+    }
+    li{
+        color:$text-color;
+    }
+    nav{
+        position: fixed;
+        width: 100vw;
+        padding:15px 0 15px 0;
+        background-color: $navColor;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav img{
+        width: 20vw;
+    }
+    nav img:hover{
+        cursor: pointer;
+    }
+    #productImg{
+        left: 0;
+        width: $viewWidth;
+        
+    }
+    #specswrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+@media(min-width:500px) and (max-width:1014px){
+    #specswrapper{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    #productImg{
+        width: 100vw;
+    }
+    h1{
+        font-size: $textSize;
+        margin-top: 200px;
+    }
+    h2, h3{
+        font-size: 25px;
+    }
+    ul li{
+        font-size: 20px;
+    }
+}
+@media(min-width:1015px){
+    nav img{
+        width: 10vw;
+    }
+    #productImg{
+        width: 50vw!important;
+    }
+    h1{
+        font-size: 50px;
+        margin-top: 200px;
+    }
+    h2,h3{
+        font-size: 30px;
+    }
+    #specswrapper{
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #specswrapper img{
+        margin-right: 50px;
+    }
+    #specswrapper h3{
+        font-size: 50px;
+    }
+    #specswrapper ul li{
+        font-size: 25px;
+    }
+}
+
