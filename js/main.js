@@ -15,7 +15,7 @@ function loggin(){
     //     return
     // }
 
-    numbers.src = `./public/images/MainComp/MainComp_000${roundedX}.png`;
+    numbers.src = `../public/images/MainComp/MainComp_000${roundedX}.png`;
 
 }
     addEventListener("mousemove", loggin);
